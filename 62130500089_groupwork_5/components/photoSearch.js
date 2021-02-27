@@ -16,5 +16,12 @@ app.component('photo-search', {
     <button @click="searchButton=false"
       class="ml-2 bg-black text-white w-16 h-8 hover:bg-gray-600 focus:outline-none"> Cancel </button>
   </div>`,
-  data()
+  computed: {
+    filteredList() {
+      this.list2 = this.list.filter((l) => {
+          return l.title.toLowerCase().includes(this.search.toLowerCase());
+      });
+      return this.list2;
+  }
+  }
 })

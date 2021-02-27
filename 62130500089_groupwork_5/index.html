@@ -25,7 +25,8 @@
   <div id="app" class="w-screen max-w-xl mx-56 my-10 space-y-3">
     <!-- <div id="app" class="w-max max-w-xl fixed ml-12 mt-5"> -->
     <h1 class="text-xl">DPR live's songs list ({{list.length}})</h1>
-    <a @click="searchButton=true" href="#">
+    <photo-item :list="list" @toggle-fav="toggle"></photo-item>
+    <!-- <a @click="searchButton=true" href="#">
       <span class="material-icons my-1.5 bg-black w-12 text-white text-center h-6 p-0.5 hover:bg-gray-600"> search
       </span>
     </a>
@@ -35,9 +36,9 @@
         type="text" placeholder="Please enter text">
       <button @click="searchButton=false"
         class="ml-2 bg-black text-white w-16 h-8 hover:bg-gray-600 focus:outline-none"> Cancel </button>
-    </div>
-    <h2>{{countFav}} liked songs </h2>
-    <photo-item :list="list" @toggle-fav="toggle"></photo-item>
+    </div> -->
+    <!-- <h2>{{countFav}} liked songs </h2> -->
+   
 
     <!-- <ul>
       <div v-if="largeImage" class="bg-black h-1/2 w-1/2 ml-auto mr-auto">
