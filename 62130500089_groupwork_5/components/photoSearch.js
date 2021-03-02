@@ -2,6 +2,9 @@ app.component('photo-search', {
     props: {
         searchButton: false,
         search: "",
+        list: {
+          type: Array,
+        }
     },
     template:
     /* html */

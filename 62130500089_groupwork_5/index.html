@@ -26,6 +26,8 @@
     <!-- <div id="app" class="w-max max-w-xl fixed ml-12 mt-5"> -->
     <h1 class="text-xl">DPR live's songs list ({{list.length}})</h1>
     <photo-item :list="list" @toggle-fav="toggle"></photo-item>
+    <photo-search></photo-search>
+    <photo-view @return-index="returnIndex"></photo-view>
     <!-- <a @click="searchButton=true" href="#">
       <span class="material-icons my-1.5 bg-black w-12 text-white text-center h-6 p-0.5 hover:bg-gray-600"> search
       </span>
